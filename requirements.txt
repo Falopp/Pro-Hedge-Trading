@@ -1,0 +1,41 @@
+# Core dependencies
+streamlit>=1.28.0
+python-binance>=1.0.19
+pandas>=2.1.0
+numpy>=1.24.0
+plotly>=5.17.0
+
+# Hyperliquid SDK
+hyperliquid-python-sdk
+
+# Ethereum utilities
+eth-account>=0.9.0
+
+# HTTP and API utilities
+requests>=2.31.0
+urllib3>=2.0.0
+
+# Rate limiting and caching
+ratelimit>=2.2.1
+
+# Environment management
+python-dotenv>=1.0.0
+
+# Data processing
+PyYAML>=6.0.1
+
+# Development dependencies
+pytest>=7.4.0
+pytest-cov>=4.1.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.5.0
+
+# Logging
+structlog>=23.1.0
+
+# Performance monitoring
+prometheus-client>=0.17.0
+
+# Security
+cryptography>=41.0.0 

@@ -1,0 +1,96 @@
+# Archivos de entorno y credenciales
+.env
+*.env
+.env.local
+.env.prod
+.env.production
+config.py
+config.json
+credentials.json
+keys.json
+secrets.py
+secrets.json
+
+# API Keys y tokens
+*api_key*
+*secret*
+*token*
+*private_key*
+
+# Archivos de logs
+*.log
+logs/
+docs/_build/
+
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Entornos virtuales
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Datos sensibles del trading
+trade_history.csv
+positions.json
+*backup*
+*.bak
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+__pycache__/
+*.pyc
+*.pyo
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Documentation builds
+docs/_build/
+site/
+
+# Development
+.mypy_cache/
+.tox/
+.vscode/
+.idea/
+
+# Docker
+.dockerignore

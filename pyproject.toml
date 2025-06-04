@@ -1,0 +1,148 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pro-hedge-trading"
+version = "2.0.0"
+description = "Enterprise-grade funding rate arbitrage system for Binance and Hyperliquid"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Pro Hedge Trading Team", email = "dev@prohedgetrading.com"}
+]
+maintainers = [
+    {name = "Pro Hedge Trading Team", email = "dev@prohedgetrading.com"}
+]
+keywords = ["trading", "arbitrage", "cryptocurrency", "binance", "hyperliquid", "funding-rates"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11", 
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "streamlit>=1.28.0",
+    "python-binance>=1.0.19",
+    "pandas>=2.1.0",
+    "numpy>=1.24.0",
+    "plotly>=5.17.0",
+    "hyperliquid-python-sdk",
+    "eth-account>=0.9.0",
+    "requests>=2.31.0",
+    "urllib3>=2.0.0",
+    "ratelimit>=2.2.1",
+    "python-dotenv>=1.0.0",
+    "PyYAML>=6.0.1",
+    "structlog>=23.1.0",
+    "prometheus-client>=0.17.0",
+    "cryptography>=41.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.5.0",
+    "bandit>=1.7.0",
+    "isort>=5.12.0",
+]
+docs = [
+    "sphinx>=7.0.0",
+    "sphinx-rtd-theme>=1.3.0",
+    "myst-parser>=2.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Falopp/pro-hedge-trading-clean"
+Documentation = "https://falopp.github.io/pro-hedge-trading-clean/"
+Repository = "https://github.com/Falopp/pro-hedge-trading-clean.git"
+"Bug Tracker" = "https://github.com/Falopp/pro-hedge-trading-clean/issues"
+Changelog = "https://github.com/Falopp/pro-hedge-trading-clean/blob/main/CHANGELOG.md"
+
+[project.scripts]
+pro-hedge = "ui.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 88
+known_first_party = ["src"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+strict_equality = true
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q --strict-markers --strict-config"
+testpaths = ["tests"]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "integration: marks tests as integration tests",
+    "unit: marks tests as unit tests",
+]
+
+[tool.coverage.run]
+source = ["src"]
+omit = [
+    "*/tests/*",
+    "*/venv/*",
+    "*/__pycache__/*",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+]
+
+[tool.bandit]
+exclude_dirs = ["tests", "build", "dist"]
+skips = ["B101", "B601"] 
