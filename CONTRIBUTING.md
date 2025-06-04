@@ -20,7 +20,7 @@ Nos comprometemos a crear un ambiente inclusivo y acogedor. Consulta nuestro [C�
 ## 🤝 Cómo Contribuir
 
 ### Reportar Bugs
-- Usa nuestro [template de issues](https://github.com/ProHedgeTrading/pro-hedge-trading/issues/new?template=bug_report.md)
+- Usa nuestro [template de issues](https://github.com/Falopp/Pro-Hedge-Trading/issues/new?template=bug_report.md)
 - Incluye pasos para reproducir el problema
 - Proporciona logs relevantes (sin datos sensibles)
 - Especifica versiones de Python, SO y dependencias

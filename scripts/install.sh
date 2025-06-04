@@ -90,7 +90,7 @@ fi
 
 # Clonar repositorio
 echo -e "${BLUE}📥 Clonando repositorio...${NC}"
-git clone https://github.com/ProHedgeTrading/pro-hedge-trading.git "$INSTALL_DIR"
+git clone https://github.com/Falopp/Pro-Hedge-Trading.git "$INSTALL_DIR"
 cd "$INSTALL_DIR"
 
 # Crear entorno virtual
