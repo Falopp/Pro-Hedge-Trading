@@ -247,10 +247,5 @@ pip install -e .
 
 ---
 
-## 📞 **Soporte**
-
-- **🐛 Issues**: [GitHub Issues](https://github.com/Falopp/pro-hedge-trading/issues)
-- **💡 Mejoras**: [GitHub Discussions](https://github.com/Falopp/pro-hedge-trading/discussions)
-
 ---
 **Hecho con ❤️ por [@Falopp](https://github.com/Falopp) | [⭐ Star este repo](https://github.com/Falopp/pro-hedge-trading) si te ayudó**

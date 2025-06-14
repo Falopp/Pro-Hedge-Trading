@@ -26,7 +26,7 @@ Nos comprometemos a crear un ambiente inclusivo y acogedor. Consulta nuestro [C�
 - Especifica versiones de Python, SO y dependencias
 
 ### Solicitar Features
-- Usa nuestro [template de feature request](https://github.com/ProHedgeTrading/pro-hedge-trading/issues/new?template=feature_request.md)
+- Usa nuestro [template de feature request](https://github.com/Falopp/Pro-Hedge-Trading/pro-hedge-trading/issues/new?template=feature_request.md)
 - Describe claramente el caso de uso
 - Explica el beneficio para la comunidad
 - Considera la complejidad de implementación
@@ -52,7 +52,7 @@ Nos comprometemos a crear un ambiente inclusivo y acogedor. Consulta nuestro [C�
 ### Instalación
 ```bash
 # Clona el repositorio
-git clone https://github.com/Falopp/pro-hedge-trading-clean.git
+git clone https://github.com/Falopp/Pro-Hedge-Trading.git
 cd pro-hedge-trading
 
 # Crea entorno virtual
@@ -272,18 +272,5 @@ Todos los contribuidores son reconocidos en nuestro [Contributors Wall](https://
 - 🧪 Testing
 - 🌍 Traducciones
 - 📢 Promoción
-
-## 📞 Soporte
-
-- 💬 [Discord Community](https://discord.gg/pro-hedge-trading)
-- 📧 Email: dev@prohedgetrading.com
-- 🐦 Twitter: [@ProHedgeTrading](https://twitter.com/ProHedgeTrading)
-- 📚 [Documentation](https://pro-hedge-trading.readthedocs.io/)
-
-## 📄 Licencia
-
-Al contribuir, aceptas que tus contribuciones se licenciarán bajo la [MIT License](LICENSE).
-
----
 
 **¡Gracias por hacer Pro Hedge Trading mejor! 🚀** 

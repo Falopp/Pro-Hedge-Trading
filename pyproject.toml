@@ -62,11 +62,7 @@ docs = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Falopp/pro-hedge-trading-clean"
-Documentation = "https://falopp.github.io/pro-hedge-trading-clean/"
-Repository = "https://github.com/Falopp/pro-hedge-trading-clean.git"
-"Bug Tracker" = "https://github.com/Falopp/pro-hedge-trading-clean/issues"
-Changelog = "https://github.com/Falopp/pro-hedge-trading-clean/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/Falopp/Pro-Hedge-Trading.git"
 
 [project.scripts]
 pro-hedge = "ui.app:main"

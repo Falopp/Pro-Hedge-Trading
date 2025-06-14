@@ -20,7 +20,7 @@ setup(
     description="Enterprise-grade funding rate arbitrage system for Binance and Hyperliquid",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/Falopp/pro-hedge-trading-clean",
+    url="https://github.com/Falopp/Pro-Hedge-Trading.git",
     author="Pro Hedge Trading Team",
     author_email="dev@prohedgetrading.com",
     license="MIT",
@@ -57,10 +57,5 @@ setup(
         "console_scripts": [
             "pro-hedge=ui.app:main",
         ],
-    },
-    project_urls={
-        "Bug Reports": "https://github.com/Falopp/pro-hedge-trading-clean/issues",
-        "Documentation": "https://falopp.github.io/pro-hedge-trading-clean/",
-        "Source": "https://github.com/Falopp/pro-hedge-trading-clean",
     },
 ) 
